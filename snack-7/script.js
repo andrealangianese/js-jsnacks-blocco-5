@@ -21,3 +21,16 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+const search = students.find(function(el) {
+  return el.id === 2;
+})
+
+console.log(search);
+
+//versione arrow
+
+const search2 = students.find((element) => element.id === 2 )
+
+console.log(search2);
+
