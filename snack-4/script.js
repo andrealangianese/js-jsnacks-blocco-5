@@ -7,3 +7,18 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
+
+//versione estesa di map
+
+const people = posts.map(function(post) {
+  return "il nome degli autori è " + post.author;
+});
+
+
+//versione più compatta
+
+const people1 = posts.map((post) =>
+`il nome degli autori è  ${post.author}`
+);
+
+console.log(people, people1);
