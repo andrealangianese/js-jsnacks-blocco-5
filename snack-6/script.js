@@ -26,3 +26,12 @@ for (let i = 0; i < zucchine.length; i++) {
 }
 console.log("Queste sono le zucchine grandi",zuccGrandi);
 console.log("Zucchine piccole:", zuccPiccole);
+
+//con filter
+
+const big = zucchine.filter((zuc) => zuc.length >= 15);
+const small = zucchine.filter((zuc) => zuc.length < 15);
+
+console.log("the big one",big);
+
+console.log("the small one", small);
